@@ -1,0 +1,23 @@
+{
+    "name": "tweettrends-flex-template",
+    "description": "Tweet trends flex template",
+    "parameters": [
+      {
+        "name": "tweets_topic",
+        "label": "Input Cloud Pub/Sub topic.",
+        "helpText": "Name of Cloud Pub/Sub topic where the tweets are published",
+        "regexes": [
+          "projects/[^/]+/topics/[a-zA-Z][-_.~+%a-zA-Z0-9]{2,}"
+        ]
+      },
+      {
+        "name": "trends_topic",
+        "label": "Output Cloud Pub/Sub topic.",
+        "helpText": "Name of the Cloud Pub/Sub topic where the twitter trends are published",
+        "isOptional": true,
+        "regexes": [
+          "projects/[^/]+/topics/[a-zA-Z][-_.~+%a-zA-Z0-9]{2,}"
+        ]
+      }
+    ]
+  }
